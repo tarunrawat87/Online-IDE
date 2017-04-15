@@ -1,0 +1,105 @@
+<!Doctype html>
+<html lang='en'>
+<head>
+<script src='/OnlineCompiler/ja.js'>
+</script>
+<style rel='stylesheet' href='abc.css'>
+#codearea{
+position: absolute;
+top:50px;
+left:50px;
+    width: 700px;
+    height:500px;
+    border: 0px solid grey;
+    padding: 0px;
+    margin: 0px;
+border-radius:0px
+}
+
+#upper
+{
+position: absolute;
+
+    width:1370px;
+    border: 1px solid grey;
+   background-color:grey;
+   color:white;
+
+height:40px;
+}
+#codeblock
+{position: absolute;
+top:40px;
+left:20px;
+
+    width: 650px;
+    border: 3px solid grey;
+    padding: 0px;
+    margin: 5px;
+border-radius:10px
+}
+
+#editButton{
+position: absolute;
+top:70px;
+left:78px;
+
+
+}
+
+#para{
+position: absolute;
+top:370px;
+left:222px;
+font-size:120%;
+color:red;	
+}
+#para1{
+position: absolute;
+top:370px;
+left:70px;
+font-size:120%;
+color:black;	
+}
+
+
+</style>
+</head>
+<body>
+<div id='upper'>
+<a href='' style='color:white;font-size:200%;text-decoration:none' > CodePad</a>
+</div>
+<div id='check'>
+ 
+</div>
+
+<center>
+<input type='submit' id='editButton' value='edit'>
+
+<div id='codearea'>
+
+<form onsubmit='return validateForm(this)' action='/OnlineCompiler/compiler'
+
+
+<table >
+<tr><td>
+<div id='codeblock'>
+<textarea rows='18' cols='89' id='code' name='code' style='border: 0px solid black;' readonly>
+#include<stdio.h>
+int main()
+{
+retun 0;
+}
+</textarea>
+</div>
+</center>
+</table>
+</center>
+</div>
+</form>
+<p id='para1'>Compilation Status:</p>
+<p id='para'>Error</p>
+<div id='stdin'>
+</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+class psp 
+{
+
+
+cdshuucvdguhcfduferu;
+}

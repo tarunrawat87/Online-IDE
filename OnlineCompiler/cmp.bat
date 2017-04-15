@@ -1,0 +1,2 @@
+javac -classpath c:\tomcat7\webapps\OnlineCompiler\WEB-INF\classes\;c:\tomcat7\lib\*;. C:\tomcat7\webapps\OnlineCompiler\WEB-INF\classes\com\tr\projects\OnlineCompiler\backend\*.java
+javac -classpath c:\tomcat7\webapps\OnlineCompiler\WEB-INF\classes\;c:\tomcat7\lib\*;. C:\tomcat7\webapps\OnlineCompiler\WEB-INF\classes\com\tr\projects\OnlineCompiler\backend\servlets\compilerServlet.java

@@ -1,0 +1,42 @@
+Compiled from "ArrayList.java"
+public class java.util.ArrayList<E> extends java.util.AbstractList<E> implements java.util.List<E>, java.util.RandomAccess, java.lang.Cloneable, java.io.Serializable {
+  transient java.lang.Object[] elementData;
+  public java.util.ArrayList(int);
+  public java.util.ArrayList();
+  public java.util.ArrayList(java.util.Collection<? extends E>);
+  public void trimToSize();
+  public void ensureCapacity(int);
+  public int size();
+  public boolean isEmpty();
+  public boolean contains(java.lang.Object);
+  public int indexOf(java.lang.Object);
+  public int lastIndexOf(java.lang.Object);
+  public java.lang.Object clone();
+  public java.lang.Object[] toArray();
+  public <T> T[] toArray(T[]);
+  E elementData(int);
+  public E get(int);
+  public E set(int, E);
+  public boolean add(E);
+  public void add(int, E);
+  public E remove(int);
+  public boolean remove(java.lang.Object);
+  public void clear();
+  public boolean addAll(java.util.Collection<? extends E>);
+  public boolean addAll(int, java.util.Collection<? extends E>);
+  protected void removeRange(int, int);
+  public boolean removeAll(java.util.Collection<?>);
+  public boolean retainAll(java.util.Collection<?>);
+  public java.util.ListIterator<E> listIterator(int);
+  public java.util.ListIterator<E> listIterator();
+  public java.util.Iterator<E> iterator();
+  public java.util.List<E> subList(int, int);
+  static void subListRangeCheck(int, int, int);
+  public void forEach(java.util.function.Consumer<? super E>);
+  public java.util.Spliterator<E> spliterator();
+  public boolean removeIf(java.util.function.Predicate<? super E>);
+  public void replaceAll(java.util.function.UnaryOperator<E>);
+  public void sort(java.util.Comparator<? super E>);
+  static int access$100(java.util.ArrayList);
+  static {};
+}

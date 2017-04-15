@@ -1,0 +1,123 @@
+<!Doctype html>
+<html lang='en'>
+<head>
+<script src='/OnlineCompiler/ja.js'>
+</script>
+<style rel='stylesheet' href='abc.css'>
+#runbutton
+{
+position: absolute;
+top:445px;
+left:280px;
+ background-color:grey; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#codearea{
+position: absolute;
+top:100px;
+left:100px;
+    width: 700px;
+    height:500px;
+    border: 4px solid grey;
+    padding: 0px;
+    margin: 5px;
+border-radius:10px
+}
+
+#upper
+{
+position: absolute;
+
+    width:1370px;
+    border: 1px solid grey;
+   background-color:grey;
+   color:white;
+
+height:40px;
+}
+
+#check
+{
+position: absolute;
+    left: 680px;
+    top: 155px;
+  width:100px;
+height:380px;
+    border: 2px solid grey;
+    padding: 0px;
+    margin: 0px;
+backgoround-color:white;
+color:solid black;
+}
+
+#codeblock
+{
+position: absolute;
+top:40px;
+left:20px;
+    width: 530px;
+    border: 4px solid grey;
+    padding: 0px;
+    margin: 5px;
+border-radius:10px
+}
+
+#exp
+{
+position: absolute;
+top:160px;
+left:680px;
+
+}
+
+
+
+
+</style>
+</head>
+<body>
+<div id='upper'>
+<a href='' style='color:white;font-size:200%;text-decoration:none' > CodePad</a>
+</div>
+<div id='check'>
+ 
+</div>
+
+<center>
+<div id='codearea'>
+
+<form onsubmit='return validateForm(this)' action='/OnlineCompiler/compiler'>
+<table >
+<tr><td>
+<div id='codeblock'>
+<textarea rows='25' cols='72' id='code' name='code' style='border: 0px solid black;'>
+#include<stdio.h>
+int main()
+{
+retun 0;
+}
+</textarea>
+</div>
+</center>
+</tr></td>
+<tr><td><center>CodePad is online Complier primarly developed for Acropolis Students<br>Paste your Code here <input type='submit' id='runbutton' value='submit code' ></center></td></tr>
+</table>
+</center>
+</div>
+<div id='exp'>
+<input type='radio' name='codetype' id='languageRadioButton' value='C' >C<br>
+<input type='radio' name='codetype' id='languageRadioButton' value='C++' >C++<br>
+<input type='radio' name='codetype' id='languageRadioButton' value='Java' >Java <br>
+<input type='radio' name='codetype' id='languageRadioButton' value='C++' >Scala<br>
+</div>
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+ http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+ version="3.0"
+ metadata-complete="true">
+ <servlet>
+ <servlet-name>OnlineCompiler</servlet-name>
+ <servlet-class>com.tr.projects.OnlineCompiler.backend.servlets.compilerServlet</servlet-class>
+
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>OnlineCompiler</servlet-name>
+ <url-pattern>/compiler</url-pattern>
+ </servlet-mapping>
+
+ <servlet>
+ <servlet-name>EditItem</servlet-name>
+ <servlet-class>dummy.editModule</servlet-class>
+
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>EditItem</servlet-name>
+ <url-pattern>/edit</url-pattern>
+ </servlet-mapping>
+
+ <servlet>
+ <servlet-name>UpdateItem</servlet-name>
+ <servlet-class>dummy.updateModule</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>UpdateItem</servlet-name>
+ <url-pattern>/update</url-pattern>
+ </servlet-mapping>
+
+ <servlet>
+ <servlet-name>DeleteItem</servlet-name>
+ <servlet-class>dummy.get_deleteModule</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>DeleteItem</servlet-name>
+ <url-pattern>/delete</url-pattern>
+ </servlet-mapping>
+
+ <servlet>
+ <servlet-name>RemoveItem</servlet-name>
+ <servlet-class>dummy.removeModule</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>RemoveItem</servlet-name>
+ <url-pattern>/remove</url-pattern>
+ </servlet-mapping>
+
+ <servlet>
+ <servlet-name>ListItem</servlet-name>
+ <servlet-class>dummy.listModule</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>ListItem</servlet-name>
+ <url-pattern>/list</url-pattern>
+ </servlet-mapping>
+
+
+</web-app>
